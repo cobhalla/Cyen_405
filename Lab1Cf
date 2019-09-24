@@ -1,0 +1,28 @@
+function [t] = Lab1Cf()
+pow = [1e3,1e5,1e7];
+nd = 5; 
+nw=[1,2,3,4]; 
+hp = gcp('nocreate');
+t = zeros(4,3);
+
+for x = 1:4 %nw index
+    if isempty(hp), hp=parpool(nw(x)); end
+    for y = 1:3 %pow index
+	np = pow(y);
+        A = randn(np,nd); 
+        B = randn(np,nd);
+        d = zeros(np,1);
+        tic;
+        parfor i = 1:np
+          for j = 1:nd
+              d(i) = d(i) + (B(i,j)-A(i,j)).^2;
+          end
+        d(i) = sqrt(d(i));
+        end
+        t(x,y) = toc;
+        % delete(A);
+        % delete(B);
+        % delete(d);
+    end
+    delete(hp);
+end
