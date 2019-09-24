@@ -1,0 +1,15 @@
+function [d,t] = Lab1E(np,nd,nl)
+    if (nargin < 1), np = 1e6; nd = 5; nl=8; end
+
+    hp = gcp('nocreate');
+    if isempty(hp), hp=parpool(nl); end
+    
+    tic;
+    dA = distributed.randn(np/nl,nd);
+    dB = distributed.randn(np/nl,nd);
+    dc = sqrt(sum((dA - dB).^2,2));
+    d=gather(dc);
+    t=toc;
+    
+delete(hp);
+end
