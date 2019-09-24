@@ -1,0 +1,27 @@
+function [da,ta] = Lab1D(np,nd,nl) 
+
+if (nargin < 1), np = 1e6; nd = 5; nl=8; end
+
+hp = gcp('nocreate');
+if isempty(hp), hp=parpool(nl); end
+
+
+spmd %single program, multiple data
+    %display(numlabs);
+    A = randn(np/nl,nd); B = randn(np/nl,nd);
+    d = zeros(np/nl,1);
+    tic;
+    for i = 1:np/nl
+        for j = 1:nd
+            d(i) = d(i) + (B(i,j)-A(i,j)).^2;
+        end
+        d(i) = sqrt(d(i));
+    end
+    t = toc;
+    %display(t);
+    
+da = gcat(d,1,1);
+ta = gplus(t,1);
+display(ta);
+end
+delete(hp);
