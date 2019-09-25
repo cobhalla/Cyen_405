@@ -10,6 +10,6 @@
 #PBS -M adh050@latech.edu
 module load matlab/r2017a
 work="/home/cobhalla"
-MATLABFILE="Lab1Cs"
+MATLABFILE="Lab1C"
 cd $work
 matlab -logfile ./ml_output.txt -nodisplay -r $MATLABFILE
