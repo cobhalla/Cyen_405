@@ -1,0 +1,101 @@
+--------------------------------------
+Running PBS prologue script
+--------------------------------------
+User and Job Data:
+--------------------------------------
+Job ID:    698409.qb3
+Username:  cobhalla
+Group:     latechusers
+Date:      25-Sep-2019 16:23
+Node:      qb125 (119956)
+--------------------------------------
+PBS has allocated the following nodes:
+
+qb125
+
+A total of 20 processors on 1 nodes allocated
+---------------------------------------------
+Check nodes and clean them of stray processes
+---------------------------------------------
+Checking node qb125 16:23:22 
+Done clearing all the allocated nodes
+------------------------------------------------------
+Concluding PBS prologue script - 25-Sep-2019 16:23:22
+------------------------------------------------------
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Starting parallel pool (parpool) using the 'local' profile ...
+[Warning: The system time zone setting, 'US/Central', does not specify a single
+time zone unambiguously. It will be treated as 'America/Chicago'. See the <a
+href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for
+details about specifying time zones.] 
+[> In verifyTimeZone (line 23)
+  In datetime (line 515)
+  In parallel.internal.cluster.DefaultProperties.getNewJobPropStruct (line 16)
+  In parallel.internal.cluster.CJSSupport/buildJob (line 158)
+  In parallel.cluster.CJSCluster/buildCommunicatingJob (line 465)
+  In parallel.Cluster/createCommunicatingJob (line 92)
+  In parallel.internal.pool.InteractiveClient>iCreateCommunicatingJob (line 715)
+  In parallel.internal.pool.InteractiveClient/start (line 325)
+  In parallel.Pool>iStartClient (line 593)
+  In parallel.Pool.hBuildPool (line 472)
+  In parallel.internal.pool.doParpool (line 18)
+  In parpool (line 89)
+  In Lab1C (line 9)] 
+connected to 1 workers.
+Parallel pool using the 'local' profile is shutting down.
+Starting parallel pool (parpool) using the 'local' profile ...
+connected to 12 workers.
+
+ans =
+
+    0.1974    0.0929    3.9483
+   11.5119    0.1292    2.3502
+    0.0795    0.0908    2.1201
+    0.0696    0.0851    2.1144
+    0.0678    0.0803    2.0741
+    0.0664    0.0765    3.2395
+    0.0621    0.0782    3.2570
+    0.0665    0.0784    3.2659
+    0.0614    0.0789    3.2643
+    0.0634    0.0783    3.2505
+    0.0653    0.0772    2.0994
+    0.0650    0.0763    2.0940
+    0.0627    0.0760    2.0674
+    0.0623    0.0714    2.0513
+    0.0589    0.0730    2.0480
+    0.0636    0.0721    3.2109
+    0.0637    0.0725    3.2661
+    0.0572    0.0692    3.2659
+    0.0632    0.0674    3.2617
+    0.0625    0.0731    3.2860
+
+>> ------------------------------------------------------
+Running PBS epilogue script    - 25-Sep-2019 16:25:32
+------------------------------------------------------
+Checking node qb125 (MS)
+Checking node qb125 ok
+------------------------------------------------------
+Concluding PBS epilogue script - 25-Sep-2019 16:25:33
+------------------------------------------------------
+Exit Status:     0
+Job ID:          698409.qb3
+Username:        cobhalla
+Group:           latechusers
+Job Name:        myjob-
+Session Id:      119955
+Resource Limits: ncpus=1,neednodes=1:ppn=20,nodes=1:ppn=20,walltime=01:00:00
+Resources Used:  cput=00:04:58,mem=7609696kb,vmem=50983712kb,walltime=00:02:11
+Queue Used:      workq
+Account String:  loni_cyen405
+Node:            qb125
+Process id:      121333
+------------------------------------------------------
