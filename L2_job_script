@@ -1,0 +1,14 @@
+#1/bin/bash
+#PBS -l nodes=1:ppn=20
+#PBS -l walltime=03:00:00
+#PBS -N myjob-
+#PBS -o myjob1.out
+#PBS -e myjob1.err
+#PBS -q workq
+#PBS -A loni_cyen405
+#PBS -m e
+#PBS -M adh050@latech.edu
+work="/home/cobhalla/lab2"
+XFILE="lab2_a"
+cd $work
+./$XFILE
