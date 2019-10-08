@@ -1,0 +1,71 @@
+--------------------------------------
+Running PBS prologue script
+--------------------------------------
+User and Job Data:
+--------------------------------------
+Job ID:    704304.qb3
+Username:  cobhalla
+Group:     latechusers
+Date:      08-Oct-2019 16:33
+Node:      qb030 (89153)
+--------------------------------------
+PBS has allocated the following nodes:
+
+qb030
+
+A total of 20 processors on 1 nodes allocated
+---------------------------------------------
+Check nodes and clean them of stray processes
+---------------------------------------------
+Checking node qb030 16:33:59 
+Done clearing all the allocated nodes
+------------------------------------------------------
+Concluding PBS prologue script - 08-Oct-2019 16:33:59
+------------------------------------------------------
+MPI run with 4 processes.
+Hello, Cobhalla from #0 of 4!
+Time elapsed is 0.000017 secs.
+Hello, Cobhalla from #1 of 4!
+Time elapsed is 0.000016 secs.
+Hello, Cobhalla from #2 of 4!
+Time elapsed is 0.000016 secs.
+Hello, Cobhalla from #3 of 4!
+Time elapsed is 0.000015 secs.
+MPI run with 8 processes.
+Hello, Cobhalla from #0 of 8!
+Time elapsed is 0.000012 secs.
+Hello, Cobhalla from #1 of 8!
+Time elapsed is 0.000011 secs.
+Hello, Cobhalla from #2 of 8!
+Time elapsed is 0.000013 secs.
+Hello, Cobhalla from #3 of 8!
+Time elapsed is 0.000016 secs.
+Hello, Cobhalla from #4 of 8!
+Time elapsed is 0.000016 secs.
+Hello, Cobhalla from #5 of 8!
+Time elapsed is 0.000013 secs.
+Hello, Cobhalla from #6 of 8!
+Time elapsed is 0.000017 secs.
+Hello, Cobhalla from #7 of 8!
+Time elapsed is 0.000011 secs.
+------------------------------------------------------
+Running PBS epilogue script    - 08-Oct-2019 16:34:00
+------------------------------------------------------
+Checking node qb030 (MS)
+Checking node qb030 ok
+------------------------------------------------------
+Concluding PBS epilogue script - 08-Oct-2019 16:34:02
+------------------------------------------------------
+Exit Status:     0
+Job ID:          704304.qb3
+Username:        cobhalla
+Group:           latechusers
+Job Name:        myjob-
+Session Id:      89152
+Resource Limits: ncpus=1,neednodes=1:ppn=20,nodes=1:ppn=20,walltime=03:00:00
+Resources Used:  cput=00:00:03,mem=0kb,vmem=0kb,walltime=00:00:03
+Queue Used:      workq
+Account String:  loni_cyen405
+Node:            qb030
+Process id:      89788
+------------------------------------------------------
