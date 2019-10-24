@@ -1,0 +1,8 @@
+"""
+Lab 4 first python Boto 3 activity
+Q1a:
+"""
+import boto3
+ec2 = boto3.client('ec2')
+response = ec2.describe_instances()
+print(response)
