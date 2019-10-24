@@ -1,0 +1,1 @@
+{'InstanceMonitorings': [{'InstanceId': 'i-0f29ce9713c7635c9', 'Monitoring': {'State': 'pending'}}], 'ResponseMetadata': {'RequestId': '44c7335e-bded-46a4-81ff-640f9eb934a7', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '424', 'date': 'Thu, 24 Oct 2019 19:46:44 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}
