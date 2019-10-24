@@ -1,0 +1,35 @@
+"""
+Lab 4 Q1c: Start and stop an amazon Ec2 instance
+"""
+import sys
+import boto3
+from botocore.exceptions import ClientError
+ec2 = boto3.client('ec2')
+action = sys.argv[1].upper()
+if action == 'ON':
+    # Do a dryrun first to verify permission
+    try:
+        ec2.start_instances(InstanceIds=['i-013a8cf89e143593f'], DryRun=True)
+    except ClientError as e:
+        if 'DryRunException' not in str(e):
+            raise
+    
+    # DryRun succeeded, run start_instances again without DryRun
+    try:
+        response = ec2.start_instances(InstanceIds=['i-013a8cf89e143593f'], DryRun=False)
+        print(response)
+    except ClientError as e:
+        print(e)
+else:
+    # Do a dryrun first to verify permission
+    try:
+        ec2.stop_instances(InstanceIds=['i-013a8cf89e143593f'], DryRun=True)
+    except ClientError as e:
+        if 'DryRunException' not in str(e):
+            raise
+    # DryRun succeeded, run stop_instances again without DryRun
+    try:
+        response = ec2.stop_instances(InstanceIds=['i-013a8cf89e143593f'], DryRun=False)
+        print(response)
+    except ClientError as e:
+        print(e)
