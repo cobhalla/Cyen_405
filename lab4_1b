@@ -1,0 +1,11 @@
+"""
+lab 4 Q1b: start and stop detailed monitoring of an EC2 instance
+"""
+import sys
+import boto3
+ec2 = boto3.client('ec2')
+if sys.argv[1] == 'ON':
+    response = ec2.monitor_instances(InstanceIds= ['i-0f29ce9713c7635c9'])
+else:
+    response = ec2.unmonitor_instances(InstanceIds= ['i-0f29ce9713c7635c9'])
+print(response)
