@@ -1,0 +1,5 @@
+Sucsess  {'SecurityGroups': [{'Description': 'launch-wizard-1 created 2019-10-17T14:51:50.637-05:00', 'GroupName': 'launch-wizard-1', 'IpPermissions': [{'FromPort': 22, 'IpProtocol': 'tcp', 'IpRanges': [{'CidrIp': '0.0.0.0/0'}], 'Ipv6Ranges': [], 'PrefixListIds': [], 'ToPort': 22, 'UserIdGroupPairs': []}, {'FromPort': 3389, 'IpProtocol': 'tcp', 'IpRanges': [{'CidrIp': '0.0.0.0/0'}], 'Ipv6Ranges': [], 'PrefixListIds': [], 'ToPort': 3389, 'UserIdGroupPairs': []}], 'OwnerId': '378669522221', 'GroupId': 'sg-0b22b0ef47c2cb1ee', 'IpPermissionsEgress': [{'IpProtocol': '-1', 'IpRanges': [{'CidrIp': '0.0.0.0/0'}], 'Ipv6Ranges': [], 'PrefixListIds': [], 'UserIdGroupPairs': []}], 'VpcId': 'vpc-c5a655ae'}], 'ResponseMetadata': {'RequestId': 'ebf3655e-1cb8-4465-8d29-c5bb5ff6243e', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '2019', 'date': 'T
+
+Process exited with code: 0
+
+Pane is dead
