@@ -1,0 +1,4 @@
+Sucsess  {'ResponseMetadata': {'RequestId': '3ae64d2c-8c36-4d2f-b6e1-3ca9bc3fef88', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '239', 'date': 'Tue, 29 Oct 2019 19:49:19 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}
+
+
+Process exited with code: 0
