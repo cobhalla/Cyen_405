@@ -1,0 +1,4 @@
+Sucsess  {'GroupId': 'sg-0b396723ccac1a45e', 'ResponseMetadata': {'RequestId': 'e93cd029-1cab-4e7b-b05b-0248413dec2f', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '283', 'date': 'Tue, 29 Oct 2019 19:47:01 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}
+
+
+Process exited with code: 0
