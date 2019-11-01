@@ -1,0 +1,7 @@
+"""
+Lab 4 Q1e: get information about your keypairs
+"""
+import boto3
+ec2 = boto3.client('ec2')
+response = ec2.describe_key_pairs()
+print('Sucsess ',response)
