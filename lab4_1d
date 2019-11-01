@@ -1,0 +1,23 @@
+"""
+Lab 4 Q1d: reboot an amazon Ec2 instance
+"""
+import sys
+import boto3
+from botocore.exceptions import ClientError
+ec2 = boto3.client('ec2')
+action = sys.argv[1].upper()
+
+# Do a dryrun first to verify permission
+try:
+    ec2.reboot_instances(InstanceIds=['i-013a8cf89e143593f'], DryRun=True)
+except ClientError as e:
+    if 'DryRunException' not in str(e):
+        print("You do not have permission to reboot instances")
+        raise
+
+# DryRun succeeded, run start_instances again without DryRun
+try:
+    response = ec2.reboot_instances(InstanceIds=['i-013a8cf89e143593f'], DryRun=False)
+    print('Sucsess ',response)
+except ClientError as e:
+    print(e)
