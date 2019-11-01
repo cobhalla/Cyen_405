@@ -1,0 +1,13 @@
+"""
+Lab 4 Q1h: Create a new security groups
+"""
+import boto3
+from botocore.exceptions import ClientError
+ec2 = boto3.client('ec2')
+
+try:
+    response = ec2.create_security_group(GroupName = 'Lab4_1ij', 
+                                          Description = 'lab4_1ij created 10/29/19')
+    print('Sucsess ',response)
+except ClientError as e:
+    print(e)
