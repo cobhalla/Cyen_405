@@ -1,0 +1,12 @@
+"""
+Lab 4 Q1h: Delete a security groups
+"""
+import boto3
+from botocore.exceptions import ClientError
+ec2 = boto3.client('ec2')
+
+try:
+    response = ec2.delete_security_group(GroupId = 'sg-0b396723ccac1a45e')
+    print('Sucsess ',response)
+except ClientError as e:
+    print(e)
