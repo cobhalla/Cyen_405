@@ -1,0 +1,4 @@
+{'ResponseMetadata': {'RequestId': 'EA0920E07F27D7D6', 'HostId': '1ssluSt54wD297sgg2lBXRuEoSEtp5QWCx7B0zu2QRvszOgj0d65fsInnMNIk9EU2ML6JZ++SiU=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': '1ssluSt54wD297sgg2lBXRuEoSEtp5QWCx7B0zu2QRvszOgj0d65fsInnMNIk9EU2ML6JZ++SiU=', 'x-amz-request-id': 'EA0920E07F27D7D6', 'date': 'Sat, 02 Nov 2019 00:21:22 GMT', 'content-type': 'application/xml', 'transfer-encoding': 'chunked', 'server': 'AmazonS3'}, 'RetryAttempts': 0}, 'Owner': {'ID': '67e59dc9a2a3249253750e1dd7a731a0cc20054e2439932d50e39d3', 'Type': 'CanonicalUser'}, 'Permission': 'FULL_CONTROL'}]}
+
+Process exited with code: 0
+Pane is dead
