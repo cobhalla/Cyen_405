@@ -1,0 +1,12 @@
+"""
+Lab 4 Q2e: Create Presigned URLs
+"""
+import boto3
+import logging
+s3 = boto3.client('s3')
+key = 'README.md'
+bucket_name = 'gibberishbucket'
+response = s3.generate_presigned_url(ClientMethod='get_object',Params={
+        'Bucket': bucket_name,
+        'Key': key})
+print(response)
