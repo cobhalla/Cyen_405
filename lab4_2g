@@ -4,5 +4,5 @@ Lab 4 Q2g: Retrieve a bucket Policy
 import boto3
 bucket_name = 'gibberishbucket'
 s3 = boto3.client('s3')
-response = s3.get_bucket_acl(Bkuket=bucket_name)
+response = s3.get_bucket_acl(Bucket=bucket_name)
 print(response)
