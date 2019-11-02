@@ -1,0 +1,12 @@
+"""
+Lab 4 Q2b: List Existing Amazon S3 bucket
+"""
+import boto3
+import logging
+from botocore.exceptions import ClientError
+s3_client = boto3.client('s3')
+response = s3_client.list_buckets()
+#Output the buckets
+print('Existing Buckets:')
+for bucket in response['Buckets']:
+    print(f' {bucket["Name"]}')
